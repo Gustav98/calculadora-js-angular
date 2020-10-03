@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script/calculadora.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>Calculadora JS</title>
+</head>
+<body>
+    <h1>Calculadora JS e Angular</h1>
+    <form action="#" method="POST" id="formulario">
+        <div id="geral">
+            <div id="visao">
+                <input type="text" class="tela" id="visor">
+            </div>
+
+            <div id="primeira">
+                <input type="button" value="C" onclick="limparTudo()" class="btn">
+                <input id="divisao" type="button" value="÷" onclick="pressionaOperacao(value)" class="btn">
+            </div>
+            <div id="segunda">
+                <input type="button" value="7" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="8" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="9" onclick="pressionaNumero(value)" class="btn">
+                <input id="multiplicacao" type="button" value="X" onclick="pressionaOperacao(value)" class="btn">
+            </div>
+            <div id="terceira">
+                <input type="button" value="4" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="5" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="6" onclick="pressionaNumero(value)" class="btn">
+                <input id="subtracao" type="button" value="-" onclick="pressionaOperacao(value)" class="btn">
+            </div>
+            <div id="quarta">
+                <input type="button" value="1" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="2" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="3" onclick="pressionaNumero(value)" class="btn">
+                <input id="adicao" type="button" value="+" onclick="pressionaOperacao(value)" class="btn">
+            </div>
+
+            <div id="quinta">
+                <input type="button" value="0" onclick="pressionaNumero(value)" class="btn">
+                <input type="button" value="=" onclick="pressionaIgual()" class="btn btn-igual">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
