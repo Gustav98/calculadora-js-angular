@@ -55,7 +55,7 @@ function pressionaIgual() {
 				resultado = Number(termos[0]) - Number(termos[2]);
 				break;
 	
-			case "X":
+			case "x":
 				resultado = Number(termos[0]) * Number(termos[2]);
 				break;
 	

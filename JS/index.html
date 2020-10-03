@@ -11,39 +11,39 @@
     <title>Calculadora JS</title>
 </head>
 <body>
-    <h1>Calculadora JS e Angular</h1>
+    <h1>Calculadora JS</h1>
     <form action="#" method="POST" id="formulario">
         <div id="geral">
             <div id="visao">
-                <input type="text" class="tela" id="visor">
+                <input type="text" value="0" class="tela" id="visor">
             </div>
 
             <div id="primeira">
-                <input type="button" value="C" onclick="limparTudo()" class="btn">
-                <input id="divisao" type="button" value="÷" onclick="pressionaOperacao(value)" class="btn">
+                <button type="button" value="C" onclick="limparTudo()" class="btn">C</button>
+                <button id="divisao" type="button" value="÷" onclick="pressionaOperacao(value)" class="btn">÷</button>
             </div>
             <div id="segunda">
-                <input type="button" value="7" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="8" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="9" onclick="pressionaNumero(value)" class="btn">
-                <input id="multiplicacao" type="button" value="X" onclick="pressionaOperacao(value)" class="btn">
+                <button type="button" value="7" onclick="pressionaNumero(value)" class="btn">7</button>
+                <button type="button" value="8" onclick="pressionaNumero(value)" class="btn">8</button>
+                <button type="button" value="9" onclick="pressionaNumero(value)" class="btn">9</button>
+                <button id="multiplicacao" type="button" value="x" onclick="pressionaOperacao(value)" class="btn">x</button>
             </div>
             <div id="terceira">
-                <input type="button" value="4" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="5" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="6" onclick="pressionaNumero(value)" class="btn">
-                <input id="subtracao" type="button" value="-" onclick="pressionaOperacao(value)" class="btn">
+                <button type="button" value="4" onclick="pressionaNumero(value)" class="btn">4</button>
+                <button type="button" value="5" onclick="pressionaNumero(value)" class="btn">5</button>
+                <button type="button" value="6" onclick="pressionaNumero(value)" class="btn">6</button>
+                <button id="subtracao" type="button" value="-" onclick="pressionaOperacao(value)" class="btn">-</button>
             </div>
             <div id="quarta">
-                <input type="button" value="1" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="2" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="3" onclick="pressionaNumero(value)" class="btn">
-                <input id="adicao" type="button" value="+" onclick="pressionaOperacao(value)" class="btn">
+                <button type="button" value="1" onclick="pressionaNumero(value)" class="btn">1</button>
+                <button type="button" value="2" onclick="pressionaNumero(value)" class="btn">2</button>
+                <button type="button" value="3" onclick="pressionaNumero(value)" class="btn">3</button>
+                <button id="adicao" type="button" value="+" onclick="pressionaOperacao(value)" class="btn">+</button>
             </div>
 
             <div id="quinta">
-                <input type="button" value="0" onclick="pressionaNumero(value)" class="btn">
-                <input type="button" value="=" onclick="pressionaIgual()" class="btn btn-igual">
+                <button type="button" value="0" onclick="pressionaNumero(value)" class="btn">0</button>
+                <button type="button" value="=" onclick="pressionaIgual()" class="btn btn-igual">=</button>
             </div>
         </div>
     </form>
