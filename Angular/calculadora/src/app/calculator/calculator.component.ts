@@ -39,7 +39,13 @@ export class CalculatorComponent implements OnInit {
       case '*':
         return this.primeiroNumero *= secondOp;
       case '/':
-        return this.primeiroNumero /= secondOp;
+        if(secondOp == 0){
+          alert("Não é possível dividir por 0");
+          secondOp = "Error"
+
+        } else {
+          return this.primeiroNumero /= secondOp;
+        }
       case '=':
         return secondOp;
     }
