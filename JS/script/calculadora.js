@@ -60,7 +60,12 @@ function pressionaIgual() {
 				break;
 	
 			case "÷":
-				resultado = Number(termos[0]) / Number(termos[2]);
+				if(Number(termos[2])  == 0){
+					alert("Não é possível dividir por 0");
+					resultado = "Error"
+				} else {
+					resultado = Number(termos[0]) / Number(termos[2]);
+				}
 				break;
 		}
 		mantemResultado = resultado
