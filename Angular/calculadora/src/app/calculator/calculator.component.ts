@@ -11,13 +11,22 @@ export class CalculatorComponent implements OnInit {
   primeiroNumero = null;
   operador = null;
   aguardandoSegundoNumero = false;
+  isResult = false;
+  visorResult = '';
 
   public getNumero(v: string){
     if(this.aguardandoSegundoNumero){
       this.numeroAtual = v;
       this.aguardandoSegundoNumero = false;
-    } else {
-      this.numeroAtual === '0' ? this.numeroAtual = v: this.numeroAtual += v;
+      this.visorResult +=v;
+    } else if (this.numeroAtual === '0' || this.visorResult == '0'){
+      this.isResult = false;
+      this.numeroAtual = v;
+      this.visorResult = ''
+      this.visorResult += v;
+  } else{
+      this.numeroAtual += v;
+      this.visorResult +=v;
     }
   }
 
@@ -43,8 +52,10 @@ export class CalculatorComponent implements OnInit {
       const resultado = this.fazCalculos(this.operador, Number(this.numeroAtual))
       this.numeroAtual = String(resultado);
       this.primeiroNumero = resultado;
+      this.isResult = true
     }
     this.operador = op;
+    this.visorResult += op;
     this.aguardandoSegundoNumero = true;
   }
 

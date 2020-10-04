@@ -2,7 +2,7 @@
 <form action="#" method="POST" id="formulario">
     <div id="geral">
         <div id="visao">
-            <input type="text" value="0" class="tela" [value]="numeroAtual" id="visor" disabled >
+            <input type="text" value="0" class="tela" [value]="isResult ? numeroAtual : visorResult" id="visor" disabled >
         </div>
 
         <div id="primeira">
