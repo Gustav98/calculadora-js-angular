@@ -19,7 +19,7 @@ e Angular 9 para outra.
  - Digite git clone (clonar git) e cole a URL que você copiou anteriormente.
     
     ```bash
-    git clone https://github.com/SEU-USERNAME/SEU-REPOSITORY
+    git clone https://github.com/SEU-USERNAME/SEU-REPOSITORIO
     ```
  - Pressione Enter para criar seu clone local.
  
